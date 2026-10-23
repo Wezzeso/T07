@@ -1,0 +1,6 @@
+condition,maximum_error,tolerance,passed
+a_primal,7.105427357601002e-15,1e-06,True
+b_dual_signs,-0.0,1e-06,True
+c_row_complementarity,6.094134574214875e-14,1e-06,True
+d_reduced_costs,1.4210854715202004e-14,1e-06,True
+e_strong_duality,2.2737367544323206e-13,1e-06,True

@@ -1,0 +1,6 @@
+.venv/
+env_pulp3/
+__pycache__/
+.pytest_cache/
+*.pyc
+report/page-*.png

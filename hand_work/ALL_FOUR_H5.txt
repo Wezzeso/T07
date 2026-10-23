@@ -1,0 +1,37 @@
+One shared page for all four students
+Write Team T07 H5 at the top
+Show the calculation steps and all four sign the bottom
+
+Appendix H5 The lower bound and three relative gaps
+
+Shared task for all four students
+
+Part a Three line lower bound argument
+
+Every feasible binary point is also feasible for the relaxed triangle LP.
+The objective is identical at that point in both problems.
+Minimizing over the larger LP set gives zLP <= z*.
+
+Part b Use zLP = 11.000 and calculate (z - zLP) / z
+
+Integer point | z | Calculation | Relative gap
+
+Optimum (0,1,1) | 14.000 | (14-11)/14 = 3/14 | 0.214286
+
+Point (1,0,1) | 15.000 | (15-11)/15 = 4/15 | 0.266667
+
+Rounded up (1,1,1) | 22.000 | (22-11)/22 = 11/22 | 0.500000
+
+To three decimals the ratios are 0.214 and 0.267 and 0.500. As percentages they are 21.429 and 26.667 and 50.000 percent.
+
+Part c What the numbers tell us
+
+The first ratio uses the true integer optimum so it directly measures the quality of the LP bound. The other two compare feasible solution costs with the lower bound. They are upper bounds on relative suboptimality with the solution cost as denominator and include the weakness of the relaxation.
+
+For (1,0,1) the actual relative loss is (15-14)/15 = 0.066667. For (1,1,1) it is (22-14)/22 = 0.363636. These are smaller than 0.266667 and 0.500000 because zLP is below z*. In Checkpoint 4 an exact integer solve will show the actual bound gap and will help assess the cost of a metaheuristic solution separately.
+
+Code reproduction tests/test_M5.py
+
+Signatures Igor Makowski __________  Bek Marat __________
+
+Timur Ryabov __________  Sofiya Akhmadishina __________

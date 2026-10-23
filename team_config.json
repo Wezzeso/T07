@@ -1,0 +1,61 @@
+{
+  "team_id": "T07",
+  "repository_url": "https://github.com/Wezzeso/T07",
+  "commit_hash": null,
+  "instance_status": "Assigned T07 data verified against the private team packet",
+  "seed": 7,
+  "story": "A",
+  "variant": 2,
+  "cap": null,
+  "designated_row": "A5",
+  "official_check_values": {
+    "N": 41,
+    "V": 14,
+    "Cap": 82,
+    "demand_sum": 903,
+    "is_premium_sum": 13,
+    "distance_sum_3dp": 87717.651,
+    "variables": 1735,
+    "rows": 1805
+  },
+  "triangle": {
+    "status": "Assigned T07 triangle data",
+    "costs": [
+      8,
+      7,
+      7
+    ],
+    "prices": [
+      4,
+      3,
+      4
+    ],
+    "alternative_prices": [
+      5,
+      2,
+      3
+    ]
+  },
+  "members": [
+    {
+      "name": "Igor Makowski",
+      "role": "M1",
+      "planned_share": 25
+    },
+    {
+      "name": "Bek Marat",
+      "role": "M2",
+      "planned_share": 25
+    },
+    {
+      "name": "Timur Ryabov",
+      "role": "M3",
+      "planned_share": 25
+    },
+    {
+      "name": "Sofiya Akhmadishina",
+      "role": "M4",
+      "planned_share": 25
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+Write one page on paper with your name Team T07 role and task at the top
+Show the calculation steps and sign the bottom
+Use the worked solution below to check your own calculations
+
+Appendix H2 The half point and rounding
+
+Bek Marat   M2
+
+Part a Feasibility and cost
+
+Take y = (0.500,0.500,0.500). Each variable is between 0 and 1. Each covering row has left side 0.500 + 0.500 = 1.000 so all three rows hold with equality.
+
+The cost is 8 x 0.500 + 7 x 0.500 + 7 x 0.500 = 4.000 + 3.500 + 3.500 = 11.000.
+
+The dual vector (4,3,4) is nonnegative and A^T pi = (8,7,7) = c. Its lower bound is 4 + 3 + 4 = 11.000. The feasible half point reaches this bound so zLP = 11.000.
+
+Part b Rounding up and down
+
+Rounding | Point | Feasibility | Cost
+
+Up | (1,1,1) | All row left sides are 2 | 22.000
+
+Down | (0,0,0) | All three rows fail by 1 | 0.000
+
+Rounding up is feasible but costly. Rounding down is infeasible even though its objective is zero. Its cost cannot be used as the value of a feasible solution.
+
+Part c The integer optimum and relative LP gap
+
+H1 gives z* = 14.000 at (0,1,1).
+
+(z* - zLP) / z* = (14 - 11) / 14 = 3 / 14 = 0.214285714 = 21.429 percent.
+
+Every feasible integer point costs at least 14.000 while the LP has cost 11.000. Therefore no integral point can be an optimal solution of this LP. The relative gap measures the weakness of the relaxation when the integer optimum is known.
+
+Code reproduction tests/test_M2.py
+
+Signature Bek Marat ____________________

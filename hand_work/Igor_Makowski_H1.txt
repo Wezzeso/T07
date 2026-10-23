@@ -1,0 +1,47 @@
+Write one page on paper with your name Team T07 role and task at the top
+Show the calculation steps and sign the bottom
+Use the worked solution below to check your own calculations
+
+Appendix H1 The triangle model
+
+Igor Makowski   M1
+
+Part a Matrix form
+
+The objective is min 8y1 + 7y2 + 7y3.
+
+c = (8,7,7)^T and b = (1,1,1)^T
+
+A has rows (1,1,0) and (0,1,1) and (1,0,1).
+
+The relaxation is min c^T y with Ay >= b and 0 <= y <= 1. There are three variables and three structural rows. Bounds are not counted as rows.
+
+Part b Changing the row senses
+
+Multiplying each row by -1 gives -Ay <= -b. The rows are -y1 - y2 <= -1 and -y2 - y3 <= -1 and -y1 - y3 <= -1. For minimization the original >= prices are nonnegative. After the change each price is negated and becomes nonpositive. Here pi = (4,3,4) becomes (-4,-3,-4). The product of each price and its row remains unchanged.
+
+Part c All eight binary points
+
+Point y | Row left sides | Feasible | Cost
+
+000 | 0 0 0 | No | 0.000
+
+001 | 0 1 1 | No | 7.000
+
+010 | 1 1 0 | No | 7.000
+
+011 | 1 2 1 | Yes | 14.000
+
+100 | 1 0 1 | No | 8.000
+
+101 | 1 1 2 | Yes | 15.000
+
+110 | 2 1 1 | Yes | 15.000
+
+111 | 2 2 2 | Yes | 22.000
+
+The minimum feasible binary cost is 14.000 at y = (0,1,1). Thus z* = 14.000.
+
+Code reproduction tests/test_M1.py
+
+Signature Igor Makowski ____________________

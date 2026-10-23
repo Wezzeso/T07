@@ -1,0 +1,39 @@
+Write one page on paper with your name Team T07 role and task at the top
+Show the calculation steps and sign the bottom
+Use the worked solution below to check your own calculations
+
+Appendix H3 Checking the two dual vectors
+
+Timur Ryabov   M3
+
+Use y = (0.500,0.500,0.500) and c = (8,7,7). All rows are >= rows so every row price must be nonnegative. All three row slacks are zero and every variable is interior.
+
+Part a Assigned vector pi = (4,3,4)
+
+A^T pi = (4+4,4+3,3+4) = (8,7,7). Reduced costs r = c - A^T pi = (0,0,0). The bound term sum min(0,r_j) is zero. The primal cost is 11 and the dual value is 4+3+4 = 11.
+
+Part b Alternative vector pi prime = (5,2,3)
+
+A^T pi prime = (5+3,5+2,2+3) = (8,7,5). Reduced costs are (0,0,2). All prices remain nonnegative. The dual value is 5+2+3 = 10 because the bound term is still zero.
+
+Largest error | pi | pi prime
+
+a Primal feasibility | 0.000 | 0.000
+
+b Dual row signs | 0.000 | 0.000
+
+c Row complementarity | 0.000 | 0.000
+
+d Reduced cost conditions | 0.000 | 2.000
+
+e Strong duality difference | 0.000 | 1.000
+
+With pi prime condition d fails because y3 is interior but r3 = 2. Condition e fails because 11 - 10 = 1. All other conditions pass. Row complementarity remains zero since every row is tight.
+
+Part c The weaker lower bound
+
+Since pi prime >= 0 and A^T pi prime <= c we have c^T y >= pi prime^T Ay >= pi prime^T b = 10 for every feasible nonnegative y. Therefore 10 is a valid lower bound even though it is not optimal. It is 1.000 below the best lower bound of 11.000. The failure is reduced cost stationarity at the proposed half point rather than invalid row signs.
+
+Code reproduction tests/test_M3.py
+
+Signature Timur Ryabov ____________________

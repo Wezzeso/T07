@@ -1,0 +1,2 @@
+variables,rows,nonzeros,fixed_zero_variables,N,V,Cap,demand_sum,is_premium_sum,distance_sum_3dp,zLP,solver,seconds,fractional_binary_variables,split_vms,official_checks_supplied
+1735,1805,6901,0,41,14,82,903,13,87717.651,1183.0399773512986,SciPy HiGHS,0.015204776999780734,76,0,True

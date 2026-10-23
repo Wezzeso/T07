@@ -1,0 +1,12 @@
+{
+  "active_rows.csv": "addb0c29dd6106480aa27e02728a647082ea15d36a59da10a3229498dddfcc38",
+  "analysis.json": "641935e70eaf1c86106ac605eec31f9f16697c3bb4ec5a1dea99329ef5bcab5d",
+  "certificate_vectors.npz": "a2229f37d110c486f822dea3e81bab9ea6d713fac94058b865cf8c298f203562",
+  "fractional_variables.csv": "b99ebefd3724e5cf5f2df91b5eef226fe896049273818a024373f5f56bc30169",
+  "row_prices.csv": "83d0f63a91b8d6a4294354f4899df79544805d8a626e3d0f8ba1ab4d6fb3da42",
+  "solution.csv": "3ac78dd822e18b7127ef2eb331e420aff070e13f116445c92dcfd430c603070f",
+  "table1.csv": "7620b7605e5b34abba33ce84c6d49d8ee6208aa5fc3bdbe76374a116417704e7",
+  "table2.csv": "10dbf4166c6e36b6bf82a500ac9fe7bd908da552312d372dcd4f26d5dc914d90",
+  "table3.csv": "731507d66356a5426e4f1b528bf501130461f5293456d6feeeb2e65c725ee36c",
+  "triangle_binary_points.csv": "753b4a32d9457734506b1728bcd1ffab68bb07a681733e1692f48fc18947ee46"
+}

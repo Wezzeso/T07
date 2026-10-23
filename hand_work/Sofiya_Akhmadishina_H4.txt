@@ -1,0 +1,43 @@
+Write one page on paper with your name Team T07 role and task at the top
+Show the calculation steps and sign the bottom
+Use the worked solution below to check your own calculations
+
+Appendix H4 Changing the first covering requirement
+
+Sofiya Akhmadishina   M4
+
+Part a Keep all three rows tight
+
+y1 + y2 = 1 + epsilon
+y2 + y3 = 1
+y1 + y3 = 1
+
+Subtracting the last two equations gives y1 = y2. The first equation then gives y1 = y2 = (1 + epsilon) / 2. Substitution gives y3 = (1 - epsilon) / 2.
+
+The objective becomes
+z(1 + epsilon) = 8(1 + epsilon)/2 + 7(1 + epsilon)/2 + 7(1 - epsilon)/2
+= 11 + 4 epsilon.
+
+The slope is 4.000 which equals the assigned first price pi1 = 4.000. The same nonnegative dual vector (4,3,4) has reduced costs zero and gives the bound 4(1 + epsilon) + 3 + 4 = 11 + 4 epsilon. Our feasible point reaches it so the point is optimal throughout its validity interval.
+
+Part b Bound validity
+
+The bounds on y1 and y2 require 0 <= (1 + epsilon)/2 <= 1 which means -1 <= epsilon <= 1. The bounds on y3 require 0 <= (1 - epsilon)/2 <= 1 which gives the same interval. Thus the full interval is [-1,1].
+
+epsilon | Optimal point | Optimal cost
+
+-1.000 | (0.000,0.000,1.000) | 7.000
+
+0.000 | (0.500,0.500,0.500) | 11.000
+
+0.010 | (0.505,0.505,0.495) | 11.040
+
+1.000 | (1.000,1.000,0.000) | 15.000
+
+Part c Interpretation
+
+If T1 means the first customer must be covered then one extra unit of its required coverage costs 4.000 objective units while this basis remains valid.
+
+Code reproduction tests/test_M4.py
+
+Signature Sofiya Akhmadishina ____________________

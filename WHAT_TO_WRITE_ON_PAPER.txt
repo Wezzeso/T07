@@ -1,0 +1,50 @@
+Team T07 paper work
+
+Each person prepares one page for their own hand task
+Igor Makowski writes H1
+Bek Marat writes H2
+Timur Ryabov writes H3
+Sofiya Akhmadishina writes H4
+All four prepare and sign one shared H5 page
+
+Use the detailed worked solutions in HAND_WORK
+The same solutions are already on report pages 7 to 11
+Write the name team role and task at the top
+Show all calculation steps and keep three decimals
+Sign the bottom
+Scan the completed pages clearly and replace the corresponding appendix pages if submitting handwritten versions
+The instructions also allow neatly typeset signed hand solutions
+The whole main report does not need to be handwritten
+
+Igor H1
+Write the cost vector matrix right hand side bounds and row count
+Negate all three rows and the dual prices
+List all eight binary points with feasibility and costs
+The integer optimum is 14 at 011
+
+Bek H2
+Check that the half point satisfies all rows
+Calculate its cost 11
+Round up to 111 with cost 22 and down to 000 which is infeasible
+Calculate the gap 3 divided by 14 which is 21.429 percent
+
+Timur H3
+For pi 4 3 4 show reduced costs 0 0 0 and all five errors zero
+For pi prime 5 2 3 show reduced costs 0 0 2
+The five errors are 0 0 0 2 1
+The weaker bound is 10 which is 1 below the best bound 11
+
+Sofiya H4
+Solve the three tight equations
+y1 equals y2 equals (1 plus epsilon) divided by 2
+y3 equals (1 minus epsilon) divided by 2
+The objective is 11 plus 4 epsilon
+The slope is 4 and epsilon ranges from minus 1 to plus 1
+Explain the meaning of the first price
+
+All four H5
+Write the three line LP lower bound proof
+Calculate 3 divided by 14 then 4 divided by 15 then 11 divided by 22
+The ratios are 0.214 0.267 and 0.500 to three decimals
+Explain which ratio measures the LP bound and how the other ratios assess feasible solutions
+All four sign

@@ -1,0 +1,2 @@
+row,rhs,delta,z_minus,z_base,z_plus,left_slope,price,right_slope,interval_passed,secants_differ
+A5,14.0,0.01,1182.696908073829,1183.0399773512986,1183.3830466287686,34.30692774695672,34.30692774697471,34.30692774700219,True,False

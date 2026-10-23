@@ -1,0 +1,376 @@
+{
+  "config": {
+    "team_id": "T07",
+    "repository_url": "https://github.com/Wezzeso/T07",
+    "commit_hash": null,
+    "instance_status": "Assigned T07 data verified against the private team packet",
+    "seed": 7,
+    "story": "A",
+    "variant": 2,
+    "cap": null,
+    "designated_row": "A5",
+    "official_check_values": {
+      "N": 41,
+      "V": 14,
+      "Cap": 82,
+      "demand_sum": 903,
+      "is_premium_sum": 13,
+      "distance_sum_3dp": 87717.651,
+      "variables": 1735,
+      "rows": 1805
+    },
+    "triangle": {
+      "status": "Assigned T07 triangle data",
+      "costs": [
+        8,
+        7,
+        7
+      ],
+      "prices": [
+        4,
+        3,
+        4
+      ],
+      "alternative_prices": [
+        5,
+        2,
+        3
+      ]
+    },
+    "members": [
+      {
+        "name": "Igor Makowski",
+        "role": "M1",
+        "planned_share": 25
+      },
+      {
+        "name": "Bek Marat",
+        "role": "M2",
+        "planned_share": 25
+      },
+      {
+        "name": "Timur Ryabov",
+        "role": "M3",
+        "planned_share": 25
+      },
+      {
+        "name": "Sofiya Akhmadishina",
+        "role": "M4",
+        "planned_share": 25
+      }
+    ]
+  },
+  "call": {
+    "seed": 7,
+    "story": "A",
+    "variant": 2
+  },
+  "table1": {
+    "variables": 1735,
+    "rows": 1805,
+    "nonzeros": 6901,
+    "fixed_zero_variables": 0,
+    "N": 41,
+    "V": 14,
+    "Cap": 82,
+    "demand_sum": 903,
+    "is_premium_sum": 13,
+    "distance_sum_3dp": 87717.651,
+    "zLP": 1183.0399773512986,
+    "solver": "SciPy HiGHS",
+    "seconds": 0.015204776999780734,
+    "fractional_binary_variables": 76,
+    "split_vms": 0,
+    "official_checks_supplied": true
+  },
+  "table2": {
+    "numbers": {
+      "a_primal": 7.105427357601002e-15,
+      "b_dual_signs": -0.0,
+      "c_row_complementarity": 6.094134574214875e-14,
+      "d_reduced_costs": 1.4210854715202004e-14,
+      "e_strong_duality": 2.2737367544323206e-13
+    },
+    "passed": true,
+    "primal_value": 1183.039977351299,
+    "dual_value": 1183.0399773512988,
+    "signed_primal_minus_dual": 2.2737367544323206e-13,
+    "tolerance": 1e-06
+  },
+  "table3": {
+    "row": "A5",
+    "rhs": 14.0,
+    "delta": 0.01,
+    "z_minus": 1182.696908073829,
+    "z_base": 1183.0399773512986,
+    "z_plus": 1183.3830466287686,
+    "left_slope": 34.30692774695672,
+    "price": 34.30692774697471,
+    "right_slope": 34.30692774700219,
+    "interval_passed": true,
+    "secants_differ": false
+  },
+  "active_rows": [
+    {
+      "family": "A1",
+      "active": 41,
+      "total": 41,
+      "nonzero_prices": 39
+    },
+    {
+      "family": "A2",
+      "active": 832,
+      "total": 1681,
+      "nonzero_prices": 60
+    },
+    {
+      "family": "A3",
+      "active": 31,
+      "total": 41,
+      "nonzero_prices": 22
+    },
+    {
+      "family": "A4",
+      "active": 41,
+      "total": 41,
+      "nonzero_prices": 39
+    },
+    {
+      "family": "A5",
+      "active": 1,
+      "total": 1,
+      "nonzero_prices": 1
+    }
+  ],
+  "fractional_centers": [
+    {
+      "variable": "y[0]",
+      "value": 0.2614664965676448
+    },
+    {
+      "variable": "y[2]",
+      "value": 0.962962962962963
+    },
+    {
+      "variable": "y[3]",
+      "value": 0.7493472584856395
+    },
+    {
+      "variable": "y[4]",
+      "value": 0.6648495965012433
+    },
+    {
+      "variable": "y[18]",
+      "value": 0.7385335034323551
+    },
+    {
+      "variable": "y[21]",
+      "value": 0.3351504034987567
+    },
+    {
+      "variable": "y[22]",
+      "value": 0.016129032258064516
+    },
+    {
+      "variable": "y[23]",
+      "value": 0.517774692181943
+    },
+    {
+      "variable": "y[25]",
+      "value": 0.28198433420365554
+    },
+    {
+      "variable": "y[26]",
+      "value": 0.03703703703703698
+    },
+    {
+      "variable": "y[30]",
+      "value": 0.2506527415143603
+    },
+    {
+      "variable": "y[35]",
+      "value": 0.14707490431930026
+    },
+    {
+      "variable": "y[40]",
+      "value": 0.037037037037037035
+    }
+  ],
+  "objective_components": {
+    "x": 404.81544111703687,
+    "y": 778.224536234262,
+    "z": 0.0,
+    "w": 0.0,
+    "t": 0.0
+  },
+  "hand": {
+    "costs": [
+      8.0,
+      7.0,
+      7.0
+    ],
+    "A": [
+      [
+        1.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "b": [
+      1,
+      1,
+      1
+    ],
+    "points": [
+      {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "feasible": false,
+        "cost": 0.0
+      },
+      {
+        "point": [
+          0,
+          0,
+          1
+        ],
+        "feasible": false,
+        "cost": 7.0
+      },
+      {
+        "point": [
+          0,
+          1,
+          0
+        ],
+        "feasible": false,
+        "cost": 7.0
+      },
+      {
+        "point": [
+          0,
+          1,
+          1
+        ],
+        "feasible": true,
+        "cost": 14.0
+      },
+      {
+        "point": [
+          1,
+          0,
+          0
+        ],
+        "feasible": false,
+        "cost": 8.0
+      },
+      {
+        "point": [
+          1,
+          0,
+          1
+        ],
+        "feasible": true,
+        "cost": 15.0
+      },
+      {
+        "point": [
+          1,
+          1,
+          0
+        ],
+        "feasible": true,
+        "cost": 15.0
+      },
+      {
+        "point": [
+          1,
+          1,
+          1
+        ],
+        "feasible": true,
+        "cost": 22.0
+      }
+    ],
+    "prices": [
+      4.0,
+      3.0,
+      4.0
+    ],
+    "alternative_prices": [
+      5.0,
+      2.0,
+      3.0
+    ],
+    "zlp": 11.0,
+    "zstar": 14.0,
+    "half_certificate": {
+      "numbers": {
+        "a_primal": 0.0,
+        "b_dual_signs": 0.0,
+        "c_row_complementarity": 0.0,
+        "d_reduced_costs": 0.0,
+        "e_strong_duality": 0.0
+      },
+      "passed": true,
+      "primal_value": 11.0,
+      "dual_value": 11.0,
+      "signed_primal_minus_dual": 0.0,
+      "tolerance": 1e-06
+    },
+    "alternative_certificate": {
+      "numbers": {
+        "a_primal": 0.0,
+        "b_dual_signs": 0.0,
+        "c_row_complementarity": 0.0,
+        "d_reduced_costs": 2.0,
+        "e_strong_duality": 1.0
+      },
+      "passed": false,
+      "primal_value": 11.0,
+      "dual_value": 10.0,
+      "signed_primal_minus_dual": 1.0,
+      "tolerance": 1e-06
+    },
+    "alternative_bound": 10.0,
+    "alternative_bound_loss": 1.0,
+    "gap_integer_optimum": 0.21428571428571427,
+    "gap_101": 0.26666666666666666,
+    "gap_111": 0.5,
+    "epsilon_interval": [
+      -1,
+      1
+    ],
+    "sensitivity_slope": 4.0
+  },
+  "calibration": {
+    "objective": 3.0,
+    "x": [
+      1.0,
+      1.0
+    ],
+    "prices": [
+      -1.0,
+      4.0
+    ]
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pulp": "3.3.2"
+  }
+}
