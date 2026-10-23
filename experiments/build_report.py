@@ -69,7 +69,9 @@ def build():
         for row in tab.rows:
             trpr = row._tr.get_or_add_trPr()
             trpr.append(OxmlElement('w:cantSplit'))
-            for cell in row.cells:
+            for index, cell in enumerate(row.cells):
+                if widths:
+                    cell.width = Inches(widths[index])
                 for para in cell.paragraphs:
                     para.paragraph_format.space_after = Pt(2)
                     para.paragraph_format.space_before = Pt(1)
